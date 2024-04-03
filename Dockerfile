@@ -10,7 +10,7 @@ COPY . .
 # Install dependencies
 RUN apt-get update && apt-get install -y fortune-mod cowsay netcat
 
-# Add /usr/games to the PATH
+# Add ENV PATH
 ENV PATH="/usr/games:${PATH}"
 
 # Expose port 4499 for the container
